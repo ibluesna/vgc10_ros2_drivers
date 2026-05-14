@@ -12,16 +12,12 @@ setup(
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', [
             'launch/bringup.launch.py',]),
-        ('share/' + package_name + '/nodes', [
-            'nodes/OnRobotVGSimpleController.py',
-            'nodes/OnRobotVGStatusListener.py',
-            'nodes/OnRobotVGTcpNode.py']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='root',
     maintainer_email='alexnic31@gmail.com',
-    description='TODO: Package description',
+    description='ROS2 driver for OnRobot VGC10 vacuum gripper',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
