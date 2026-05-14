@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <robot name="onrobot_vgc10_model" xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find vgc10_description)/urdf/onrobot_vgc10_model_macro.xacro" />
-  <xacro:onrobot_vgc10 prefix=""/>
+  <!-- <xacro:include filename="$(find vgc10_description)/urdf/onrobot_vgc10_model_macro.xacro" /> -->
+  <xacro:include filename="./onrobot_vgc10_model_macro.xacro" />
+  <link name="world"/>
+  <xacro:onrobot_vgc10 prefix="" connected_to="world"/>
 </robot>

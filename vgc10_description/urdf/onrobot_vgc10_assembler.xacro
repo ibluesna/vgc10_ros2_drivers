@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<robot name="onrobot_vgc10_model" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="./onrobot_vgc10_model_macro.xacro" />
+  <!-- connected_to는 Robot Assembler가 flange_link로 연결해줌 -->
+  <xacro:onrobot_vgc10 prefix="" connected_to="flange_link"/>
+</robot>

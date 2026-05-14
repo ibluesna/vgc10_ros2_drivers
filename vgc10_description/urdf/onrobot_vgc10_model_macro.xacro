@@ -1,4 +1,3 @@
-
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="suction" params="prefix">
@@ -11,7 +10,8 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://vgc10_description/meshes/visual/suction_cup.stl" />
+          <!-- <mesh filename="package://vgc10_description/meshes/visual/suction_cup.stl" /> -->
+          <mesh filename="../meshes/visual/suction_cup.stl" />
         </geometry>
         <material name="">
           <color rgba="0.9 0.9 0.9 1" />
@@ -20,7 +20,8 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://vgc10_description/meshes/collision/suction_cup.stl" />
+          <!-- <mesh filename="package://vgc10_description/meshes/collision/suction_cup.stl" /> -->
+          <mesh filename="../meshes/collision/suction_cup.stl" />
         </geometry>
       </collision>
     </link>
@@ -35,7 +36,8 @@
     </joint>
   </xacro:macro>
 
-  <xacro:include filename="$(find vgc10_description)/urdf/onrobot_vgc10.xacro" />
+  <!-- <xacro:include filename="$(find vgc10_description)/urdf/onrobot_vgc10.xacro" />-->
+  <xacro:include filename="./onrobot_vgc10.xacro" />
 
   <xacro:macro name="onrobot_vgc10" params="prefix connected_to">
     <xacro:onrobot_vgc10_base_link prefix="${prefix}" connected_to="${connected_to}"/>
